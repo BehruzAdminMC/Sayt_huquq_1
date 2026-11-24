@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Huquq ma'lumot bazasi — Tadbir</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="glow" id="glow"></div>
+<div class="bar" id="bar"></div>
+
+<header class="nav">
+  <a href="#top" class="logo">
+    <svg viewBox="0 0 64 64" width="34" height="34" aria-hidden="true">
+      <circle cx="32" cy="32" r="29" fill="none" stroke="#f5c451" stroke-width="3"/>
+      <path d="M32 12v34M18 20h28M18 20l-7 15h14zM46 20l-7 15h14zM22 50h20" fill="none" stroke="#f5c451" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Huquq ma'lumot bazasi</span>
+  </a>
+  <nav>
+    <a href="#mavzular">Mavzular</a>
+    <a href="#kartalar">Kartalar</a>
+    <a href="#quiz">Tadbir testlari</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="scales">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <g fill="none" stroke="#f5c451" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M100 25v140M60 165h80"/>
+          <g class="beam">
+            <path d="M35 50h130"/>
+            <path d="M35 50l-22 55h44z"/><path d="M165 50l-22 55h44z"/>
+            <path d="M13 105a22 12 0 0 0 44 0M143 105a22 12 0 0 0 44 0"/>
+          </g>
+          <circle cx="100" cy="25" r="7" fill="#f5c451"/>
+        </g>
+      </svg>
+    </div>
+    <p class="date">8-sinf · Huquq · Tadbir</p>
+    <h1>Huquqni <span class="shine">bil</span>, himoyalan</h1>
+    <p class="typing"><span id="typed"></span><i class="caret"></i></p>
+    <div class="cta">
+      <a href="#mavzular" class="btn">Mavzularni o'rganish</a>
+      <a href="#quiz" class="btn ghost">Testni boshlash</a>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><b data-to="6">0</b><span>ta asosiy mavzu</span></div>
+    <div class="stat"><b data-to="12">0</b><span>ta tushuncha kartasi</span></div>
+    <div class="stat"><b data-to="25">0</b><span>ta test savoli</span></div>
+  </section>
+
+  <section id="mavzular" class="sec">
+    <h2>Asosiy mavzular</h2>
+    <div class="tabs" id="tabs"></div>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section id="kartalar" class="sec">
+    <h2>Tushunchalar kartasi</h2>
+    <p class="hint">Kartani bosing, ta'rifi ochiladi.</p>
+    <div class="flips" id="flips"></div>
+  </section>
+
+  <section id="quiz" class="sec">
+    <h2>Tadbir testlari — 25 ta savol</h2>
+    <div class="quiz" id="quizBox"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="credits">
+    <h3>Yaratuvchi va qatnashuvchilar</h3>
+    <p class="creator">
+      <span class="owner">OWNER - Doniyorov Behruz</span>
+    </p>
+  </div>
+  <p class="copy">© 2026 · Huquq ma'lumot bazasi · 8-sinf</p>
+</footer>
+
+<canvas id="fx"></canvas>
+<script src="main.js"></script>
+</body>
+</html>
